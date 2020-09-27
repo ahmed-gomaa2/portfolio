@@ -1,5 +1,6 @@
 import React from 'react';
 import './css/Introduction.css'
+import profile from './images/portfolioImage.jpg'
 
 const Introduction = () => {
     return (

@@ -1,5 +1,5 @@
 import React from 'react';
-import './css/About.css'
+import './css/Skills.css'
 
 const skills = ['HTML5', 'CSS3', 'Bootstrap 4', 'Semantic UI', 'Material-UI', 'Javascript', 'Heroku', 'GitHub', 'React JS','Redux', 'Reactjs Hooks', 'NodeJS', 'MongoDB', 'Firebase']
 

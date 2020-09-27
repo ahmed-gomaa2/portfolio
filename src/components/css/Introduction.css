@@ -1,9 +1,10 @@
 .introduction {
-    width: 70%;
+    width: 80%;
     margin-top: 100px;
     display: flex;
     justify-content: center;
     flex-direction: column;
+    position: relative;
 }
 
 .introduction__greeting {
@@ -42,8 +43,8 @@
     background-color: #133040;
 }
 
-@media only screen and (max-width: 560px) {
-    .introduction {
-        width: 100%;
-    }
-}
+/*@media only screen and (max-width: 560px) {*/
+/*    .introduction {*/
+/*        width: 100%;*/
+/*    }*/
+/*}*/
