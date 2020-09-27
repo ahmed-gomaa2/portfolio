@@ -1,0 +1,49 @@
+.introduction {
+    width: 70%;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.introduction__greeting {
+    color: #4DF0DA;
+    margin-bottom: 30px;
+}
+
+.introduction > h1 {
+    color: #CCD6F6;
+    margin-bottom: 20px;
+}
+
+.introduction > h2 {
+    color: #7C87A4;
+    margin-bottom: 20px;
+}
+
+.introduction__desc {
+    color: #8892B0;
+}
+
+.introduction__button {
+    margin-top: 40px !important;
+    padding: 20px;
+    background-color: #0A192F;
+    max-width: 100px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 1px solid #4DF0DA;
+    color: #4DF0DA;
+    transition: all ease-in-out .3s;
+}
+
+.introduction__button:hover {
+    background-color: #133040;
+}
+
+@media only screen and (max-width: 560px) {
+    .introduction {
+        width: 100%;
+    }
+}
