@@ -8,7 +8,7 @@ const levels = [94, 80, 71, 60, 70, 90, 85, 77, 90, 88, 60, 80, 70, 90]
 
 const Skills = () => {
     return (
-        <div className={'about'}>
+        <div id={'about'} className={'about'}>
             <div className="about__info">
                 <h1>About Me</h1>
                 <p>Hi, I'm Ahmed, a software engineer. </p>

@@ -18,7 +18,7 @@
 .projects__header {
     position: absolute;
     top: 0;
-    left: calc(50% - 150px);
+    max-width: 250px;
     color: lightgrey;
 }
 

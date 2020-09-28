@@ -43,15 +43,24 @@ const projects = [
         icon: 'fas fa-list',
         header: 'Todo App',
         desc: 'Todo App with some good functionality like adding tasks, removing, editing and completing tasks as wel as planing for week.',
-        tec: 'react, firebase',
+        tec: 'react, firebase, redux',
         github: 'https://github.com/ahmed-gomaa2/todo-app.git',
         extLink: 'https://todo-cd3fe.web.app/'
+    },
+
+    {
+        icon:'fab fa-tiktok',
+        header: 'Tik Tok clone',
+        desc: 'Tik Tok clone for the playing page only',
+        tec: 'react, firebase, redux',
+        github: 'https://github.com/ahmed-gomaa2/tik-tok.git',
+        extLink: 'https://tik-tok-clone-1b177.web.app/'
     }
 ]
 
 const Projects = () => {
     return (
-        <div className={'projects'}>
+        <div id={'projects'} className={'projects'}>
             <h1 className="projects__header">
                 My Works
             </h1>
@@ -78,6 +87,7 @@ const Projects = () => {
                             {project.tec}
                         </p>
                     </div>
+
                 </div>
             ))}
         </div>
