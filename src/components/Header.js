@@ -14,7 +14,7 @@ const Header = () => {
         <div className={'header'}>
             <nav className="header__nav">
                 <div className="header__left">
-                    <a href="" className="header__logo"><h3>AG</h3></a>
+                    <a href="/" className="header__logo"><h3>{'</AG>'}</h3></a>
                 </div>
                 <div className="header__right">
                     <ul className={`header__rightList ${open && 'header__rightListOpened'}`}>

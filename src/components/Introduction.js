@@ -9,7 +9,7 @@ const Introduction = () => {
             <h1 className={'introduction__name'}>Ahmed Gomaa</h1>
             <h2>I create Web App.</h2>
             <p className={"introduction__desc"}>I'm a full stack web developer, with so many front-end and back-end skills.</p>
-            <a href="" className="introduction__button">
+            <a href="mailto:engahmedgomaa97@gmail.com" className="introduction__button">
                 <p>Contact Me!</p>
             </a>
         </div>

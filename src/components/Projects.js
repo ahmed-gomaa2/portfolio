@@ -49,6 +49,15 @@ const projects = [
     },
 
     {
+      icon: 'fab fa-youtube',
+      header: 'Youtube Clone',
+      desc: 'youtube clone of searching and playing videos and user interface using youtube api',
+      tec: 'react, firebase, redux, youtube api v3',
+      github: 'https://github.com/ahmed-gomaa2/youtube.git',
+      extLink: 'https://clone-26004.web.app/'
+    },
+
+    {
         icon:'fab fa-tiktok',
         header: 'Tik Tok clone',
         desc: 'Tik Tok clone for the playing page only',
@@ -62,7 +71,7 @@ const Projects = () => {
     return (
         <div id={'projects'} className={'projects'}>
             <h1 className="projects__header">
-                My Works
+                My Projects
             </h1>
             {projects?.map(project => (
                 <div className="projects__item">
