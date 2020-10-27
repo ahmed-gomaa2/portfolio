@@ -4,6 +4,22 @@ import FolderIcon from '@material-ui/icons/Folder';
 
 const projects = [
     {
+        icon: 'fas fa-briefcase',
+        header: 'Work Recorder',
+        desc: 'app for mobile maintenance shop recording their work history.',
+        tec: 'react, node, mongoDB, MLab, redux.',
+        github: 'https://github.com/ahmed-gomaa2/work-recorder',
+        extLink: 'https://stark-sands-26066.herokuapp.com'
+    },
+    {
+        icon: 'fas fa-shopping-cart',
+        header: 'Shopping Store',
+        desc: 'Shopping app for grocery products.',
+        tec: 'react, node, mongoDB, MLab, redux',
+        github: 'https://github.com/ahmed-gomaa2/grocerooo.git',
+        extLink: 'https://whispering-brushlands-97312.herokuapp.com/'
+    },
+    {
         icon: 'fab fa-google',
         header: 'Google search clone',
         desc: 'simple clone for fetching data from google api when searching for and term.',

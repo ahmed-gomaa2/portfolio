@@ -7,6 +7,10 @@
     position: relative;
 }
 
+.transforming {
+    transform: translateY(100%);
+}
+
 .introduction__greeting {
     color: #4DF0DA;
     margin-bottom: 30px;
@@ -36,7 +40,7 @@
     border-radius: 5px;
     border: 1px solid #4DF0DA;
     color: #4DF0DA;
-    transition: all ease-in-out .3s;
+    transition: background-color ease-in-out .3s;
 }
 
 .introduction__button:hover {

@@ -10,10 +10,10 @@ const Skills = () => {
     return (
         <div id={'about'} className={'about'}>
             <div className="about__info">
-                <h1>About Me</h1>
-                <p>Hi, I'm Ahmed, a software engineer. </p>
-                <p>I learned web development with my self because, I enjoy coding so mush.</p>
-                <p>So I learned so many <span>skills</span> Like:</p>
+                <h1 className={'transforming'}>About Me</h1>
+                <p className={'transforming'}>Hi, I'm Ahmed, a software engineer. </p>
+                <p className={'transforming'}>I learned web development with my self because, I enjoy coding so mush.</p>
+                <p className={'transforming'}>So I learned so many <span>skills</span> Like:</p>
             </div>
 
             {skills.map(skill => {

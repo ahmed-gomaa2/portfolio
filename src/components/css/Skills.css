@@ -8,6 +8,10 @@
     padding-top: 300px;
 }
 
+.transforming {
+    transform: translateY(100%);
+}
+
 .about__info {
     position: absolute;
     top: 40px;
