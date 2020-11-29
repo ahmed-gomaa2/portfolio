@@ -4,6 +4,14 @@ import FolderIcon from '@material-ui/icons/Folder';
 
 const projects = [
     {
+        icon: 'fas fa-comments',
+        header: 'Chatty',
+        desc: 'App for chatting with friends.',
+        tec: 'react, firebase, firestore, redux, redux-thunk',
+        github: 'https://github.com/ahmed-gomaa2/chat-app',
+        extLink: 'https://chat-app-8a0e2.web.app/'
+    },
+    {
         icon: 'fas fa-briefcase',
         header: 'Work Recorder',
         desc: 'app for mobile maintenance shop recording their work history.',

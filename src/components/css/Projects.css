@@ -12,7 +12,7 @@
 }
 
 .projects__item:hover {
-    transform: translateY(-5px);
+    transform: translateY(-10px);
 }
 
 .projects__header {

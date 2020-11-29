@@ -6,6 +6,10 @@ body {
 
 }
 
+.animation {
+    transform: translateY(-10px) !important;
+}
+
 ::-webkit-scrollbar {
     -webkit-appearance: none;
     width: 7px;
