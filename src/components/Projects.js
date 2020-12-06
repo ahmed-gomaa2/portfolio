@@ -1,8 +1,16 @@
 import React from 'react';
-import './css/Projects.css'
-import FolderIcon from '@material-ui/icons/Folder';
+import './css/Projects.css';
 
 const projects = [
+    {
+        icon: 'fas fa-share-alt',
+        header: 'Sharry',
+        desc: 'App for sharing your posts with your friends.',
+        tec: 'react, firebase, firestore, redux, redux-thunk',
+        github: 'https://github.com/ahmed-gomaa2/sharry',
+        extLink: 'https://sharry-16d2b.web.app/'
+
+    },
     {
         icon: 'fas fa-comments',
         header: 'Chatty',
