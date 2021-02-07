@@ -3,6 +3,14 @@ import './css/Projects.css';
 
 const projects = [
     {
+      icon: 'fas fa-code',
+      header: 'Employ Me',
+      desc: 'App for connecting developers with each others and with the employers',
+      tec: 'react, nodeJS, MongoDB, Redux, heroku, Jsonwebtoken.',
+      github: 'https://github.com/ahmed-gomaa2/EmployMe',
+      extLink: 'https://nameless-anchorage-41801.herokuapp.com/dashboard'
+    },
+    {
         icon: 'fas fa-share-alt',
         header: 'Sharry',
         desc: 'App for sharing your posts with your friends.',
@@ -80,26 +88,37 @@ const projects = [
         extLink: 'https://todo-cd3fe.web.app/'
     },
 
-    {
-      icon: 'fab fa-youtube',
-      header: 'Youtube Clone',
-      desc: 'youtube clone of searching and playing videos and user interface using youtube api',
-      tec: 'react, firebase, redux, youtube api v3',
-      github: 'https://github.com/ahmed-gomaa2/youtube.git',
-      extLink: 'https://clone-26004.web.app/'
-    },
+];
 
-    {
-        icon:'fab fa-tiktok',
-        header: 'Tik Tok clone',
-        desc: 'Tik Tok clone for the playing page only',
-        tec: 'react, firebase, redux',
-        github: 'https://github.com/ahmed-gomaa2/tik-tok.git',
-        extLink: 'https://tik-tok-clone-1b177.web.app/'
+const projectCards = document.getElementsByClassName('projects__item');
+const projectsContainer = document.getElementsByClassName('projects');
+
+const isElementInViewport = (elem) => {
+
+    let elemTop = elem.offsetTop + projectsContainer[0].offsetTop;
+    let viewportBottom = window.scrollY + window.innerHeight;
+
+    return elemTop < (viewportBottom - 50) && elemTop + elem.offsetHeight > window.scrollY;
+}
+
+window.addEventListener('scroll', () => {
+
+    for(let i = 0; i < projectCards.length; i++) {
+
+        if (
+            isElementInViewport(projectCards[i])
+        ) {
+            projectCards[i].classList.add('projects__active');
+        }else {
+            projectCards[i].classList.remove('projects__active');
+
+        }
     }
-]
+
+})
 
 const Projects = () => {
+
     return (
         <div id={'projects'} className={'projects'}>
             <h1 className="projects__header">
@@ -110,8 +129,8 @@ const Projects = () => {
                     <div className="projects__itemIcons">
                         <a className={'projects__itemIconWrapper'}><i  className={`${project.icon} projects__itemIcon`}></i></a>
                         <div className="projects__itemRight">
-                            <a href={project.github} className={'projects__itemIconWrapper'}><i className={'fab fa-github projects__itemGithub'}></i></a>
-                            <a href={project.extLink} className={'projects__itemIconWrapper'}><i className="fas fa-external-link-alt projects__itemOpen"></i></a>
+                            <a target={'_blank'} href={project.github} className={'projects__itemIconWrapper'}><i className={'fab fa-github projects__itemGithub'}></i></a>
+                            <a target={'_blank'} href={project.extLink} className={'projects__itemIconWrapper'}><i className="fas fa-external-link-alt projects__itemOpen"></i></a>
                         </div>
                     </div>
 

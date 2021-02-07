@@ -5,6 +5,14 @@
     justify-content: center;
     flex-direction: column;
     position: relative;
+    transition: all ease-in-out 1s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.introduction__visible {
+    visibility: visible;
+    opacity: 1;
 }
 
 .transforming {
@@ -45,6 +53,12 @@
 
 .introduction__button:hover {
     background-color: #133040;
+}
+
+@media only screen and (max-width: 500px) {
+    .introduction {
+        font-size: 12px;
+    }
 }
 
 /*@media only screen and (max-width: 560px) {*/

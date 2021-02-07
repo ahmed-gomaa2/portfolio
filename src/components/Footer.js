@@ -1,5 +1,27 @@
 import React from 'react';
-import './css/Footer.css'
+import './css/Footer.css';
+
+const footer = document.getElementsByClassName('footer');
+
+const isElementInViewport = (elem) => {
+
+    let elemTop = elem.offsetTop;
+    let viewportBottom = window.scrollY + window.innerHeight;
+
+    return elemTop < (viewportBottom - 50) && elemTop + elem.offsetHeight > window.scrollY;
+}
+
+window.addEventListener('scroll', () => {
+
+    if (
+        isElementInViewport(footer[0])
+    ) {
+        footer[0].style.opacity = 1;
+    }else {
+        footer[0].style.opacity = 0;
+    }
+
+})
 
 const Footer = () => {
     return (

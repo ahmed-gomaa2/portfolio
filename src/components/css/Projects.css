@@ -8,11 +8,6 @@
     position: relative;
     padding-top: 50px;
     margin-top: 50px;
-
-}
-
-.projects__item:hover {
-    transform: translateY(-10px);
 }
 
 .projects__header {
@@ -31,7 +26,16 @@
     height:  300px;
     margin: 20px 20px 0 0;
     padding: 20px;
-    transition: all ease-in-out .3s;
+    opacity: 0;
+    transition: all ease-in-out 1s;
+    visibility: hidden;
+}
+
+.projects__active {
+    visibility: visible;
+    transform: translateY(-10px);
+    opacity: 1;
+
 }
 
 .projects__itemIcons {

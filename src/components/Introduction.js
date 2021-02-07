@@ -1,13 +1,29 @@
 import React, {useEffect} from 'react';
 import './css/Introduction.css'
-import gsap from 'gsap'
+
+const introduction = document.getElementsByClassName('introduction');
+
+const isElementInViewport = (elem) => {
+    const elemTop = elem.offsetTop;
+    const viewportBottom = window.scrollY + window.innerHeight;
+    console.log(elemTop, viewportBottom)
+    return elemTop < viewportBottom && elemTop + elem.offsetHeight > window.scrollY
+}
+
+window.addEventListener('scroll', () => {
+    if(isElementInViewport(introduction[0])) {
+        introduction[0].classList.add('introduction__visible')
+    }else {
+        introduction[0].classList.remove('introduction__visible')
+    }
+})
 
 const Introduction = () => {
 
-    useEffect(() => {
-        const tl= gsap.timeline({defaults: {ease: 'power2.out'}})
-        tl.fromTo('.transforming', .3, {opacity:'0'}, {opacity:1})
-        tl.to('.transforming', .5, {y: '0%', stagger:.06})
+    React.useEffect(() => {
+        setTimeout(() => {
+            introduction[0].classList.add('introduction__visible')
+        }, 300)
     }, [])
 
     return (
